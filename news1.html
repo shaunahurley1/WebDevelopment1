@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <title>Astronomy Ireland News</title>
+
+        
+        <meta charset="UTF-8">   
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,700&display=swap" rel="stylesheet">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
+          <link rel="stylesheet" href="css/news.css">
+       
+       
+    <script>
+        
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+            }
+                   
+    
+
+        function validate()
+    { let firstname_val=document.getElementById("firstname").value;
+        if (firstname_val==null || firstname_val=="")
+            {alert("Please enter your first name.");
+                return false;
+            }
+        
+     
+     
+     let email_val=document.getElementById("email").value;
+     if (email_val==null || email_val=="")
+         {
+             alert("Please enter your email.");
+             return false;
+         }     
+  
+     
+      if (validateEmail(email_val)==false)
+     {alert("email is invalid");
+     return false;}
+     
+
+     
+    else return true;
+     
+    }
+    
+        function validateEmail(elementValue){
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(elementValue);
+
+        }
+
+function setCookie(){
+let firstname=document.getElementById("firstname").value;
+document.cookie = "firstname="+firstname;
+alert(document.cookie);
+return true;
+}
+
+  function getAllCookies(){
+let firstname=getCookie("firstname");
+let lastname=getCookie("lastname");
+document.getElementById("message").innerHTML=
+("Hello " + firstname + " " + lastname+" Thanks for
+submitting your query. We will contact you shortly.");
+}      
+    
+
+	function validate(){
+		
+		let firstname_val = document.getElementById("firstname1").value;
+		if (firstname_val1 =="" || firstname_val1 == null){
+			alert("Please enter your first name");
+			return false;
+		}
+		
+
+            
+        
+        
+        
+        if (typeof(Storage) !== "undefined") {
+       localStorage.setItem("firstname1",firstname_val);
+       localStorage.setItem("surname",surname_val);
+       localStorage.setItem("address",address_val);  
+        }
+       else alert{("Please update your browser");}
+        return false;
+    }
+ 
+      document.cookie="name="+escape(firstname); 
+      function getCookie(c_name){
+let c_start, c_end;
+if (document.cookie.length>0) {
+c_start=document.cookie.indexOf(c_name + "=");
+if (c_start!=-1){
+c_start=c_start + c_name.length+1;
+c_end=document.cookie.indexOf(";",c_start);
+if (c_end==-1)
+c_end=document.cookie.length;
+return unescape(document.cookie.substring(c_start,c_end));
+}
+}
+return "";
+}
+
+
+    </script>
+       
+       
+
+
+
+</head>
+
+<body>
+
+
+  
+     <header>
+        
+        <div class="logo">
+                        <a href="index.html"><img src="images/logo3.jpg" alt="logo"></a>
+        </div> 
+         
+         <div class="pageTitle">
+         <a href="index.html"><h1> Astronomy Ireland</h1></a>
+         </div>
+
+         <div class="headerImg">
+                        <img src="images/heroImage.jpg" alt="Star in Galaxy" id="bgImg">
+        </div>
+        
+         
+            <div class="topnav" id="myTopnav">
+            <a href="index.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="news.html" class="active">News</a>
+            <a href="video.html">Videos</a>
+            <a href="contactUs.html">Contact Us</a>     
+            <a href="gallery.html">Gallery</a> 
+            <a href="guide.html">Style Guide</a>    
+            <a href="validation.html">Validation</a>  
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+         
+             </header>   
+    
+
+        <p id="message"></p>   
+        <h2 class="page-title">News</h2>
+
+         <div id="container"> 
+                    
+                    
+
+<form id="form1" name="form1" method="post" action="news2.html">
+
+ <p>
+<label for=" firstname ">First Name:</label>
+<input type="text" name="firstname" id="firstname">
+</p>
+<p>
+<input type="submit" name="submit" id="submit"
+value="Submit">
+</p>
+</form>
+    
+<p id="displayDate">&nbsp;</p>   
+<form id="details_form1" action="confirmationLocalStart.html" method="get" action="news2.html">
+  <p>
+    <label for="firstname1">First Name:</label>
+    <input name="firstname1" type="text" id="firstname1">
+  </p>
+
+
+    <input type="submit" name="submit" id="submit" value="Submit">
+
+</form> 
+<p id="message"></p>
+                    
+                                
+    </div>
+            <div id="container2"> 
+                
+
+             <div class="foot footerA">
+        
+            <h4>Contact Astronomy Ireland</h4>
+                <p id ="phone">Phone: 086 06 46 555  </p>
+            <a href="https://www.facebook.com/groups/53321612786/"><i class="fa fa-facebook-square" style="font-size:48px;color:#DCE1DE"></i></a>
+            <a href="https://twitter.com/AstronomyIRL"><i class="fa fa-twitter-square" style="font-size:48px;color:#DCE1DE"></i></a>
+            <a href="https://twitter.com/AstronomyIRL"><i class="fa fa-twitter-square" style="font-size:48px;color:#DCE1DE"></i></a>
+            </div>   
+        
+    
+            <div class="foot footerB">
+                
+                <h4>Site Map</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="video.html">Videos</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>     
+                    <li><a href="gallery.html">Gallery</a></li> 
+                    <li><a href="guide.html">Style Guide</a></li>    
+                    <li><a href="validation.html">Validation</a></li>  
+                </ul>            
+                    
+                </div>
+
+            <div class="foot footerC">
+                
+             <h4>Stay in touch</h4>
+                
+                <!-- I wasnt sure what to link the sign up to so I linked an old one we used another assignment -->
+            
+            <form id="details_form" action="" method="get" >
+              
+                <p><label for="firstname" id="fname">Name: </label><input name="firstname" type="text"  id="firstname" onMouseOver="" /></p>
+              
+                     
+            
+                <p><label for="email" id="email1">Email:  </label><input type="text" name="email" id="email" /></p>
+             
+                    
+    <p><input type="submit" name="submit" id="submit" value="Submit" /></p>
+
+                    
+                </form> 
+                
+                <p id="time2">time goes here</p>
+                <p id="time4">time goes here</p>
+           
+          
+       </div>
+    
+                  </div>
+    
+    
+      <script>
+               var now =new Date();
+                var hrs=now.getHours();
+                var mins=now.getMinutes();
+                var secs=now.getSeconds();
+
+                document.getElementById("time2").innerHTML =  "<strong>Time: </strong>" + hrs + ":" + mins;
+
+            var now =new Date();
+             
+            var day=now.getDate();
+             var mon=now.getMonth() +1;
+             var year=now.getFullYear();
+             
+             document.getElementById("time4").innerHTML =  "<strong>Date: </strong>" + day + "/" + mon + "/" + year;
+             
+             
+            
+    document.getElementById("details_form").addEventListener("submit",validate);
+
+
+	document.getElementById("details_form1").addEventListener("submit", validate);
+document.getElementById("form1").addEventListener("submit", setCookie);
+</script>
+    
+ 
+    
+    </body>
+
+</html>

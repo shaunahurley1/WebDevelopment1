@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <title>Astronomy Ireland Video</title>
+
+        
+        <meta charset="UTF-8">   
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    
+          <link rel="stylesheet" href="css/news.css">
+       
+       
+    <script>
+        
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+            }
+                   
+    
+
+        function validate()
+    { let firstname_val=document.getElementById("firstname").value;
+        if (firstname_val==null || firstname_val=="")
+            {alert("Please enter your first name.");
+                return false;
+            }
+        
+     
+     
+     let email_val=document.getElementById("email").value;
+     if (email_val==null || email_val=="")
+         {
+             alert("Please enter your email.");
+             return false;
+         }     
+  
+     
+      if (validateEmail(email_val)==false)
+     {alert("email is invalid");
+     return false;}
+     
+     let numeric_val=document.getElementById("noOfGuests").value;
+     if (numeric_val==null || numeric_val=="")
+         {
+             alert("Please enter number of guests.");
+             return false;
+         }        
+     
+ 
+     
+    else return true;
+     
+    }
+    
+        function validateEmail(elementValue){
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(elementValue);
+
+        }
+
+
+    
+    
+</script>
+       
+       
+
+
+
+</head>
+
+<body>
+
+
+  
+     <header>
+        
+        <div class="logo">
+                        <a href="index.html"><img src="images/logo3.jpg" alt="logo"></a>
+        </div> 
+         
+         <div class="pageTitle">
+         <a href="index.html"><h1> Astronomy Ireland</h1></a>
+         </div>
+
+         <div class="headerImg">
+                        <img src="images/heroImage.jpg" alt="Star in Galaxy" id="bgImg">
+        </div>
+        
+         
+            <div class="topnav" id="myTopnav">
+            <a href="index.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="news.html">News</a>
+            <a href="video.html" class="active">Videos</a>
+            <a href="contactUs.html">Contact Us</a>     
+            <a href="gallery.html">Gallery</a> 
+            <a href="guide.html">Style Guide</a>    
+            <a href="validation.html">Validation</a>  
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+         
+             </header>   
+    
+
+            
+            <h2 class="page-title">Astronomy Ireland Youtube</h2>
+    
+       
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p02pnt04sEU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     
+  
+            <div id="container"> 
+                
+
+             <div class="foot footerA">
+        
+            <h4>Contact Astronomy Ireland</h4>
+                <p id ="phone">Phone: 086 06 46 555  </p>
+            <a href="https://www.facebook.com/groups/53321612786/"><i class="fa fa-facebook-square" style="font-size:48px;color:#DCE1DE"></i></a>
+            <a href="https://twitter.com/AstronomyIRL"><i class="fa fa-twitter-square" style="font-size:48px;color:#DCE1DE"></i></a>
+            <a href="https://twitter.com/AstronomyIRL"><i class="fa fa-twitter-square" style="font-size:48px;color:#DCE1DE"></i></a>
+            </div>   
+        
+    
+            <div class="foot footerB">
+                
+                <h4>Site Map</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="video.html">Videos</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>     
+                    <li><a href="gallery.html">Gallery</a></li> 
+                    <li><a href="guide.html">Style Guide</a></li>    
+                    <li><a href="validation.html">Validation</a></li>  
+                </ul>            
+                    
+                </div>
+
+            <div class="foot footerC">
+                
+             <h4>Stay in touch</h4>
+                
+                
+            
+            <form id="details_form" method="get" >
+              
+                <p><label for="firstname" id="fname">Name: </label><input name="firstname" type="text"  id="firstname"  ></p>
+              
+                     
+            
+                <p><label for="email" id="email1">Email:  </label><input type="text" name="email" id="email" ></p>
+             
+                    
+    <p><input type="submit" name="submit" id="submit" value="Submit" ></p>
+
+                    
+                </form> 
+                
+                <p id="time2">time goes here</p>
+                <p id="time4">time goes here</p>
+           
+          
+       </div>
+    
+                  </div>
+    
+    
+      <script>
+               var now =new Date();
+                var hrs=now.getHours();
+                var mins=now.getMinutes();
+                var secs=now.getSeconds();
+
+                document.getElementById("time2").innerHTML =  "<strong>Time: </strong>" + hrs + ":" + mins;
+
+            var now =new Date();
+             
+            var day=now.getDate();
+             var mon=now.getMonth() +1;
+             var year=now.getFullYear();
+             
+             document.getElementById("time4").innerHTML =  "<strong>Date: </strong>" + day + "/" + mon + "/" + year;
+             
+             
+            
+    document.getElementById("details_form").addEventListener("submit",validate);
+    
+    
+    </script>   
+    
+    </body>
+
+</html>

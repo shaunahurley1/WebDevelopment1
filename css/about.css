@@ -1,0 +1,232 @@
+   
+        
+        #container {
+                        display: grid;
+                        grid-template-columns: 100%;
+              
+                        width: 100%;
+                        margin: auto;
+                      }
+
+        #container2 {
+                        display: grid;
+                        grid-template-columns: 100%;
+                        width: 100%;
+                        
+                      }     
+
+                    
+        
+            body {
+                
+                color: #1F2421;
+                background-color: #040507;
+                font-family: Calibri, sans-serif; 
+                
+                margin: 3em;
+                text-align: center;
+                }
+        
+        .contact {text-align: right; padding-bottom: 1em;}
+        
+
+        
+            
+            .page-title {
+                color: #DCE1DE;   
+                        }
+            
+            .logo {display: none;}
+
+            .headerImg {display: none;}
+
+
+            
+            h1  {
+                color: #DCE1DE;
+                text-align: center; 
+                font-family: "Sofia", sans-serif;
+               
+                }
+            
+            h2 {
+                text-align: center;
+                grid-column: 1/-1;
+                color: #1F2421;
+                font-family: "Sofia", sans-serif;
+                font-size: 1.8em;
+                }
+            
+            h3 {
+                color: #9CC5A1;
+                text-align: center;
+                font-family: "Sofia", sans-serif;
+                font-size: 1.5em;
+            }
+  
+            p {font-size: 15px;}
+
+            img {max-width:100%}
+
+        section {color: #9CC5A1; text-align: left;}
+
+            .leftCol1 {padding: 1em; text-align: left; padding-top: 1em;}
+            .rightCol1 {padding: 1em; text-align: left; padding-top: 1em;}
+            .leftCol2 {padding: 1em; text-align: left; padding-top: 1em;}
+            .rightCol2 {padding: 1em; text-align: left; padding-top: 1em;} 
+
+            .foot {background-color: #9CC5A1; text-align: left;}
+
+            #phone {text-align: left; font-size: 14px;}
+
+            .footerA {padding-left: 2em; }
+
+            .footerB {padding-left: 2em; }
+
+            ul {font-size: 14px;}
+           
+            .footerC { text-align: left; padding-left: 2em;}
+
+            label {text-align: left;}
+            
+          
+            
+            ul {
+                text-align: left; 
+                padding-bottom: 0.5em; 
+                list-style: none;
+                }
+         
+            a {color: #040507; text-align: left;}
+            
+            a:link { text-decoration: none; color: #040507; }
+            
+            a:visited { text-decoration: none; color:#216869;}
+            
+            a:hover { text-decoration: none; color:#216869;}
+            
+            a:active { text-decoration: none; color: #040507; }
+           
+           
+           
+                     /*tablet */
+          @media only screen and (min-width:600px)
+          {
+
+              
+              
+              #container{  grid-template-columns:50% 50%;} 
+              #container2{  grid-template-columns:50% 50%; } 
+              
+              .headerImg{display: inline;}
+              
+              .header{grid-column: span 2;}
+            .logo {display: inline; grid-column: 1/2; float: left;}
+              
+            h1 {display: none;}
+              
+
+
+          }
+           
+                   /*desktop */
+          @media only screen and (min-width:992px)
+          {
+              #container{  grid-template-columns:auto auto auto auto;} 
+              #container2{  grid-template-columns:auto auto auto;}          
+             
+              .leftCol1 {grid-column: 1/3;}
+              .rightCol1 {grid-column: 3/5; margin-left: auto; margin-right: auto;}
+              .leftCol2 {grid-column: 1/3; margin-left: auto; margin-right: auto;}
+              .rightCol2 {grid-column: 3/5;}    
+              
+                #bgImg {max-width:100%;}
+
+              .headerImg {grid-column: 1/7; align-content: center;}
+             
+           
+              .logo {display: inline; grid-column: 1/2; float: left;}
+            
+              h1 {display: none;}
+              .footerA {
+                grid-column: 1/2;
+                }
+                .footerB {
+                grid-column: 2/3;
+                }
+              .footerC {
+                grid-column: 3/4;
+                }
+
+          }  
+           
+        
+/* NAV BAR SETTINGS*/
+        
+        /* Add a black background color to the top navigation */
+        .topnav {
+            background-color: #216869;
+            overflow: hidden;
+
+        }
+
+/* Style the links inside the navigation bar */
+        
+        .topnav a {
+          float: left;
+          display: block;
+          color: #DCE1DE;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+/* Change the color of links on hover */
+        
+        .topnav a:hover {
+                      background-color: #49A078;
+                      color: black;
+        }
+
+/* Add an active class to highlight the current page */
+        
+        .topnav a.active {
+              background-color: #9CC5A1;
+              color: white;
+            }
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+            
+            @media only screen and (min-width: 992px)
+            {
+                #container {grid-template-columns: auto auto auto;}
+     
+            }
+            
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+            @media screen and (max-width: 600px) {
+              .topnav a:not(:first-child) {display: none;}
+              .topnav a.icon {
+                float: right;
+                display: block;
+              }
+            }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+            @media screen and (max-width: 600px) {
+              .topnav.responsive {position: relative;}
+              .topnav.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+              }
+              .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+              }
+            }

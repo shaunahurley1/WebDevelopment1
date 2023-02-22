@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <title>Astronomy Ireland Validation</title>
+
+        
+        <meta charset="UTF-8">   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,700&display=swap" rel="stylesheet">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
+        <link rel="stylesheet" href="css/about.css">
+       
+       
+    <script>
+        
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+            }
+                   
+    
+
+        function validate()
+    { let firstname_val=document.getElementById("firstname").value;
+        if (firstname_val==null || firstname_val=="")
+            {alert("Please enter your first name.");
+                return false;
+            }
+        
+     
+     
+     let email_val=document.getElementById("email").value;
+     if (email_val==null || email_val=="")
+         {
+             alert("Please enter your email.");
+             return false;
+         }     
+  
+     
+      if (validateEmail(email_val)==false)
+     {alert("email is invalid");
+     return false;}
+     
+     let numeric_val=document.getElementById("noOfGuests").value;
+     if (numeric_val==null || numeric_val=="")
+         {
+             alert("Please enter number of guests.");
+             return false;
+         }        
+     
+     
+    else return true;
+     
+    }
+    
+        function validateEmail(elementValue){
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(elementValue);
+
+        }
+
+
+    
+    
+</script>
+       
+       
+
+
+
+</head>
+
+<body>
+
+
+  
+     <header>
+        
+        <div class="logo">
+                        <a href="index.html"><img src="images/logo3.jpg" alt="logo"></a>
+        </div> 
+         
+         <div class="pageTitle">
+         <a href="index.html"><h1> Astronomy Ireland</h1></a>
+         </div>
+
+         <div class="headerImg">
+                        <img src="images/heroImage.jpg" alt="Star in Galaxy" id="bgImg">
+        </div>
+        
+         
+            <div class="topnav" id="myTopnav">
+            <a href="index.html" >Home</a>
+            <a href="about.html" >About</a>
+            <a href="news.html">News</a>
+            <a href="video.html">Videos</a>
+            <a href="contactUs.html">Contact Us</a>     
+            <a href="gallery.html">Gallery</a> 
+            <a href="guide.html">Style Guide</a>    
+            <a href="validation.html" class="active">Validation</a>  
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+         
+             </header>   
+    
+
+            
+            <h2 class="page-title">Validation</h2>
+    
+ 
+        
+                    
+                    <h3>Home</h3>
+					<img src="images/indexVal.png" alt="Validation for index" id="1">                
+                
+                  
+    
+                    <div class="2">
+                <!-- This image is free to use under the Pixabay license. No attribution required-->
+                    <img src="images/indexCSS.png" alt="CSS Validation for index" id="2">
+              
+                    </div>
+        
+    
+               
+                
+                    
+                    <h3>About</h3>
+					<img src="images/aboutVal.png" alt="Validation for About Webpage" id="3">     
+        
+                <div class="4">
+                         <!-- This image is free to use under the Pixabay license. No attribution required-->
+                    <img src="images/aboutCSS.png" alt="CSS Validation for index" id="4"> 
+    </div>      
+                    <h3>News</h3>
+					<img src="images/newsVal.png" alt="Validation for News page" id="5">                
+                
+                 
+    
+                    <div class="6">
+                <!-- This image is free to use under the Pixabay license. No attribution required-->
+                    <img src="images/newsCSS.png" alt="CSS Validation for News wepage" id="6">
+              
+                    </div>
+        
+    
+                
+                    
+                    <h3>Videos</h3>
+					<img src="images/videoVal.png" alt="Validation for About Webpage" id="7">     
+            
+                <div class="8">
+                         <!-- This image is free to use under the Pixabay license. No attribution required-->
+                    <img src="images/videoCSS.png" alt="CSS Validation for Video webpage" id="8"> 
+ 
+    </div>
+                    <h3>Contact Us</h3>
+					<img src="images/contactVal.png" alt="Validation for Contact Webpage" id="9">     
+            
+                <div class="10">
+                         <!-- This image is free to use under the Pixabay license. No attribution required-->
+                    <img src="images/contactCSS.png" alt="CSS Validation for ContactUs webpage" id="10"> 
+                    </div>
+             
+               
+ 
+           
+                    <h3>Style Guide</h3>
+					<img src="images/guideVal.png" alt="Validation for Style Guide Webpage" id="13">     
+         
+                <div class="14">
+                         <!-- This image is free to use under the Pixabay license. No attribution required-->
+                    <img src="images/guideVal.png" alt="CSS Validation for Style Guide webpage" id="14">      
+    </div>
+                  
+                    <h3>Validation</h3>
+					<img src="images/validationVal.png" alt="Validation for 
+                                                             validation Webpage" id="15">     
+     
+                <div class="16">
+                         <!-- This image is free to use under the Pixabay license. No attribution required-->
+                    <img src="images/validationCSS.png" alt="CSS Validation for Style Guide webpage" id="16">   </div>                 
+                    
+                    
+            <div id="container2"> 
+                
+
+             <div class="foot footerA">
+        
+            <h4>Contact Astronomy Ireland</h4>
+                <p id ="phone">Phone: 086 06 46 555  </p>
+            <a href="https://www.facebook.com/groups/53321612786/"><i class="fa fa-facebook-square" style="font-size:48px;color:#DCE1DE"></i></a>
+            <a href="https://twitter.com/AstronomyIRL"><i class="fa fa-twitter-square" style="font-size:48px;color:#DCE1DE"></i></a>
+            <a href="https://twitter.com/AstronomyIRL"><i class="fa fa-twitter-square" style="font-size:48px;color:#DCE1DE"></i></a>
+            </div>   
+        
+    
+            <div class="foot footerB">
+                
+                <h4>Site Map</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="video.html">Videos</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>     
+                    <li><a href="gallery.html">Gallery</a></li> 
+                    <li><a href="guide.html">Style Guide</a></li>    
+                    <li><a href="validation.html">Validation</a></li>  
+                </ul>            
+                    
+                </div>
+
+            <div class="foot footerC">
+                
+             <h4>Stay in touch</h4>
+                
+                <!-- I wasnt sure what to link the sign up to so I linked an old one we used another assignment -->
+            
+            <form id="details_form" method="get" >
+              
+                <p><label for="firstname" id="fname">Name: </label><input name="firstname" type="text"  id="firstname" ></p>
+              
+                     
+            
+                <p><label for="email" id="email1">Email:  </label><input type="text" name="email" id="email" ></p>
+             
+                    
+    <p><input type="submit" name="submit" id="submit" value="Submit" ></p>
+
+                    
+                </form> 
+                
+                <p id="time2">time goes here</p>
+                <p id="time4">time goes here</p>
+           
+          
+       </div>
+    
+                  </div>
+    
+               
+      <script>
+               var now =new Date();
+                var hrs=now.getHours();
+                var mins=now.getMinutes();
+                var secs=now.getSeconds();
+
+                document.getElementById("time2").innerHTML =  "<strong>Time: </strong>" + hrs + ":" + mins;
+
+            var now =new Date();
+             
+            var day=now.getDate();
+             var mon=now.getMonth() +1;
+             var year=now.getFullYear();
+             
+             document.getElementById("time4").innerHTML =  "<strong>Date: </strong>" + day + "/" + mon + "/" + year;
+             
+             
+            
+    document.getElementById("details_form").addEventListener("submit",validate);
+    
+    
+    </script>   
+    
+    </body>
+
+</html>
